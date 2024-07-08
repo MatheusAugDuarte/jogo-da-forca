@@ -17,7 +17,6 @@ class Database {
     }
 }
 
-// Initialize database and create tables if not exist
 $db = new Database(__DIR__ . '/../hangman.db');
 $pdo = $db->getPDO();
 $pdo->exec("CREATE TABLE IF NOT EXISTS words (
